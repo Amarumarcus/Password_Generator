@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, fantasy;
+    
+}
+
+h1 {
+    font-size: 40px;
+
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 170px; 
+}
+
+.d-flex1 {
+    max-width: 400px;
+    align-content: center;
+    min-width: 400px;
+    box-shadow: 0px 0px 30px black;
+
+}
+
+.text-success1 {
+    -webkit-text-fill-color: whitesmoke;
+}
+
+.text-success2 {
+    -webkit-text-fill-color: #258918;
+}
+
+.fs-3 {
+    align-self: flex-end;
+     -webkit-text-fill-color: #258918;
+}
+
+
+#gen {
+    background-color: #0D6EFD;
+    border: none;
+}
+
