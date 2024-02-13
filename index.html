@@ -1,51 +1,40 @@
-<!doctype html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Password GENERATOR</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <head>
         <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Password generator</title>
     </head>
-    <body class="bg-secondary  justify-content-center">
-        <div class="d-flex1 flex-column mb-3 bg-dark p-3 rounded" style="margin: 50px auto">
-            <div class="d-flex flex-column mb-3 px-3 rem" style="margin: 3px" style="padding: 2px">
-                <h4 class="text-success1">Password</h4>
-                <h1 class="text-success2">GENERATOR</h1>
-                <p class="text-success1">Make your passwords safe</p>
-                    <!-- <div class="row justify-content-around" style="margin: 3px" style="padding: 2px"> -->
-                        <div class="row"><p class="text-success1"><label id="rangeValue" for="customRange1" class="fs-3 fw-bolder form-label text-white">8</label> - Number of characters</p>
-                        </div>
-                        
-                    <!-- </div> -->
-            </div>
-                    <div class="d-flex justify-content-around" style="margin: 3px" style="padding: 2px">
-<!-- range -->
-                        <input type="range" class="form-range range-cust" min="8" max="12" value="8" id="customRange1" onchange="getRangeValue()" style="max-width: 10rem">
-<!-- genButton-->
-                        <button type="button" class="btn btn-primary btn-lg" id="gen">⚡ Generate</button>
+    <body>
+        <div id=main>
+            <div id="title">
+                <h1>Generate a</h1>
+                <h2>random password</h2>
+                <p>Never use an insecure password again</p>
+                <div id="char_and_check">
+                    <h3 id="rangeValue">8</h3>
+                    <div class="checkbox">
+                        <input type="checkbox" id="big" onclick="addChar()">
+                        <label for="big">ABC</label>
                     </div>
-<!-- passwordButtons -->
-                            <div class="d-flex justify-content-around" style="margin: 3px" style="padding: 2px">
-                                
-                                <div class="d-flex flex-column mb-3">
-                                    <button type="button" class="btn btn-outline-light btn-lg" style="margin: 3px" id="btn1" onclick="copy1()" title="Copy to Clipboard" disabled>--</button>
-                                    
-                                    <button type="button" class="btn btn-outline-light btn-lg mr-5" style="margin: 3px" id="btn2" onclick="copy2()" title="Copy to Clipboard" disabled>--</button>
-                                </div>
-                                
-                                <div class="d-flex flex-column mb-3">                               
-                                    <button type="button" class="btn btn-outline-light btn-lg mr-5" style="margin: 3px" id="btn3" onclick="copy3()" title="Copy to Clipboard" disabled>--</button>
-                                    
-                                    <button type="button" class="btn btn-outline-light btn-lg mr-5" style="margin: 3px" id="btn4" onclick="copy4()" title="Copy to Clipboard" disabled>--</button>
-                                </div>
-                            
-                            </div>
-<!-- passwordButtons -->            
+                    <div class="checkbox">
+                        <input type="checkbox" id="num" onclick="addChar()">
+                        <label for="num">123</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="spec" onclick="addChar()">
+                        <label for="spec">#$&</label>
+                    </div>
+                </div>
+            </div>
+            <div id="range_and_button">
+                <input type="range" min="8" max="12" value="8" id="customRange1" onchange="getRangeValue()">
+                <button id="gen_btn">Generate password</button>
+            </div>
+            <div id="passwords">
+                <p id="pass1">-</p>
+                <p id="pass2">-</p>
+            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
         <script src="index.js"></script>
     </body>
 </html>
-
