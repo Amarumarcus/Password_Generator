@@ -113,7 +113,7 @@ button:focus {
 }
 
 #pass1 {
-    width: 170px;
+    width: 130px;
     padding: 12px 12px;
     background-color: #273549;
     border-radius: 5px;
@@ -123,7 +123,7 @@ button:focus {
 }
 
 #pass2 {
-    width: 170px;
+    width: 130px;
     padding: 12px 12px;
     background-color: #273549;
     border-radius: 5px;
