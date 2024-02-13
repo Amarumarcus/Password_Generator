@@ -20,16 +20,6 @@ function getRangeValue() {
     passwordLength = sliderValue
 }
 
-// function addChar() {
-//     if (big.checked === true && num.checked === true) {
-//         characters = charSmall.concat(charBig)
-//         console.log(characters)
-//     } else {
-//         characters = charSmall
-//         console.log(characters)
-//     }
-// }
-
 function addChar() {
     if (big.checked === true && num.checked === true && spec.checked === true) {
         characters = charSmall.concat(charBig, charNum, charSpec)
