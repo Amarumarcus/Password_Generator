@@ -120,6 +120,7 @@ button:focus {
     text-align: center;
     color: #12B981;
     font-weight: bold;
+    margin: 15px 5px;
 }
 
 #pass2 {
@@ -130,6 +131,7 @@ button:focus {
     text-align: center;
     color: #12B981;
     font-weight: bold;
+    margin: 15px 5px;
 }
 
 input[type=range] {
